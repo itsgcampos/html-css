@@ -1,0 +1,133 @@
+/* External */
+
+/* Regra de hierarquia do CSS
+
+Inline sobrepõe o internal (inline > internal)
+Internal mesma hierarquia do external (internal = external)
+Internal / External sobrepõe o padrão do navegador (Internal / External > Padrão do navegador)
+
+Resumo: Inline > internal = external > Padrão do navegador
+
+*** Como internal e external tem a mesma prioridade, a última a ser codada é a que se sobrepõe
+
+*/
+
+
+
+body{
+
+    padding-bottom: 500px;
+}
+
+h3{
+
+    color: blue;
+
+}
+
+
+/* p{
+
+    color:  blueviolet;
+} */
+
+/* Classes */
+.paragraph{
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+
+}
+
+/* ID */
+#exclusive-title{
+
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* Regra de hierarquia dos seletores
+
+id > class > seletor de tag
+
+*** O ID vence todos os outros
+
+*/
+
+h2{
+
+    border-bottom: 2px solid red;
+}
+
+.titulo{
+
+    border-bottom:3px solid blue;
+
+}
+
+#algum-titulo{
+
+    border-bottom: 4px solid green;
+}
+
+.color-name{
+
+    color: crimson;
+}
+
+.hex{
+
+    color:#55a498;
+}
+
+.hex-simplificado{
+
+    color: #333; 
+    /* mesma coisa que utilizar #333333 */
+}
+
+.rgb{
+
+    color: rgb(255,0,0);
+}
+
+.mixed-rgb{
+
+    color: rgb(199,21,47);
+}
+
+.rgba{
+    color: rgba(100,199,45, 0.5)
+    /* se não especificar o último parâmetro, o padrão é 1 = opaco. <1 = transparente */
+}
+
+.HSL{
+
+    color: hsl(100, 20%, 50%);
+}
+
+.bg{
+
+    background-color: #000;
+    color: yellow;
+}
+
+.bg-2{
+
+    background-color: rgb(199,21,47);
+    color: #00eaff;
+}
+
+.bg-opacity{
+
+    background-color: green;
+    opacity: 0.2;
+}
+
+.bg-opacity-2{
+
+    background-color: #999;
+    color:#000;
+    opacity: 0.8;
+}
