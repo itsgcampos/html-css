@@ -1,0 +1,136 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f0ebf8;
+}
+
+h1,h2,h3,h4,h5{
+    color: #333;
+}
+
+.header_form_section{
+    color: #333;
+    margin-bottom: 5px;
+
+}
+
+p, label{
+    color: #444;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+textarea{
+    padding: 10px 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="phone"],
+textarea {
+    width: 400px;
+}
+
+.header{
+    height: 160px;
+    padding: 20px;
+    background-image: url("../img/P21_0170_a4_rgb-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header h3{
+
+    color: #fff ;
+    margin-top: 0;
+}
+
+.form_container{
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+}
+
+.form_header{
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form_header p{
+    color: #d80835;
+    border-bottom: 2px solid #d80835;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    /* maring 0 auto é uma técninca pra centralizar o elemento mesmo se depois mudarmos alguma configuração dos outros elementos */
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+.form_body{
+    padding: 30px;
+}
+
+.form_title{
+    margin-bottom: 15px;
+}
+
+.form_body p{
+    margin-bottom: 20px;
+}
+
+.required_field{
+    color: #d80835;
+}
+
+.box_input{
+    margin-bottom: 35px;
+}
+
+.block{
+    display: block;
+}
+
+.optional_box{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional_list li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.box_input p{
+    margin-bottom: 15px;
+}
+
+.btn_submit{
+    background-color: #d80835;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* regra apenas para quando passar o mouse em cima do elemento */
+.btn_submit:hover{
+    background-color: #fff;
+    border-color: #d80835;
+    color: #d80835;
+}

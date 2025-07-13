@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de preenchimento do cliente</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="form_container">
+        <div class="form_header">
+          <p>Formulário</p>
+        </div>
+        <div class="form_body">
+          <h1 class="form_title">Solicite sua Porsche</h1>
+          <p>
+            Preencha o formulário abaixo para entrar na fila de interesse e
+            garantir sua oportunidade exclusiva de adquirir uma Porsche.
+          </p>
+          <form>
+            <h3 class="header_form_section">Informações pessoais</h3>
+            <div class="box_input">
+              <label for="name"
+                >Nome <span class="required_field">*</span></label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block"
+                placeholder="Digite seu nome"
+                minlength="1"
+                required
+              />
+            </div>
+
+            <div class="box_input">
+              <label for="last_name"
+                >Sobrenome <span class="required_field">*</span></label
+              >
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                class="block"
+                placeholder="Digite seu sobrenome"
+                minlength="1"
+                required
+              />
+            </div>
+
+            <div class="box_input">
+              <label for="cpf">CPF <span class="required_field">*</span></label>
+              <input
+                type="number"
+                name="cpf"
+                id="cpf"
+                class="block"
+                placeholder="Digite seu cpf (apneas números)"
+                minlength="1"
+                required
+              />
+            </div>
+
+            <div class="box_input">
+              <label for="email"
+                >E-mail <span class="required_field">*</span></label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="block"
+                placeholder="Digite seu e-mail"
+                minlength="1"
+                required
+              />
+            </div>
+
+            <div class="box_input">
+              <label for="phone"
+                >Telefone <span class="required_field">*</span></label
+              >
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                class="block"
+                placeholder="Digite seu telefone"
+                minlength="1"
+                required
+              />
+            </div>
+
+            <h3 class="header_form_section">Dados do pedido</h3>
+            <div class="box_input">
+              <label for="model"
+                >Modelo <span class="required_field">*</span></label
+              >
+              <input
+                type="text"
+                name="model"
+                id="model"
+                class="block"
+                placeholder="Digite o modelo do veículo"
+                required
+              />
+            </div>
+
+            <div class="box_input">
+              <label for="color"
+                >Modelo <span class="required_field">*</span></label
+              >
+              <input
+                type="text"
+                name="color"
+                id="color"
+                class="block"
+                placeholder="Digite a cor desejada para o veículo"
+                required
+              />
+            </div>
+
+            <div class="box_input">
+              <label for="purchase_date"
+                >Data planejada para pagamento
+                <span class="required_field">*</span></label
+              >
+              <input
+                type="date"
+                name="purchase_date"
+                id="purchase_date"
+                class="block"
+                required
+              />
+            </div>
+
+            <div class="box_input">
+              <p>Motor: <span class="required_field">*</span></p>
+              <input type="radio" id="combustao" name="gear" />
+              <label for="combustao">Combustão</label>
+              <input type="radio" id="hibrido" name="gear" />
+              <label for="hibrido">Híbrido</label>
+              <input type="radio" id="eletrico" name="gear" />
+              <label for="eletrico">Elétrico</label>
+            </div>
+
+            <div class="optional_box">
+              <p>Opcionais</p>
+              <ul class="optional_list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="sport"
+                    name="optional[]"
+                    value="sport"
+                  />
+                  <label for="sport">Pacote Sport Chrono</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="bancos"
+                    name="optional[]"
+                    value="bancos"
+                  />
+                  <label for="bancos">Bancos Aquecidos</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="teto"
+                    name="optional[]"
+                    value="teto"
+                  />
+                  <label for="teto">Teto Solar</label>
+                </li>
+
+                <li>
+                  <input
+                    type="checkbox"
+                    id="rodas"
+                    name="optional[]"
+                    value="rodas"
+                  />
+                  <label for="rodas">Rodas Especiais</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="optional_box">
+              <ul class="optional_list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="sound"
+                    name="optional[]"
+                    value="sound"
+                  />
+                  <label for="sound">Som Premium</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="pintura"
+                    name="optional[]"
+                    value="pintura"
+                  />
+                  <label for="pintura">Pintura Personalizada</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="interior"
+                    name="optional[]"
+                    value="interior"
+                  />
+                  <label for="interior">Interior de Carbono</label>
+                </li>
+
+                <li>
+                  <input
+                    type="checkbox"
+                    id="package"
+                    name="optional[]"
+                    value="package"
+                  />
+                  <label for="package">Pacote Porsche Sport</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="box_input">
+              <p>Fotos do modelo: <span class="required_field">*</span></p>
+              <input
+                type="file"
+                multiple
+                accept="image/png, image/jpg"
+                id="images"
+                name="images"
+                required
+              />
+            </div>
+
+            <input type="submit" value="Enviar" class="btn_submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
